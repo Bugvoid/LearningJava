@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+    <title>Exercício Carro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+<div class="container">
+    <form method="post" action="Finalizar">
+        <div class="form-group">
+            <div class="col-sm-12" style="background-color: #dbdbdb">
+                <h4 class="control-label col-sm-12 text-center">Exercício Carro</h4>
+                <table width="100%">
+                    <tr>
+                        <th width="100px" style="text-align: right; padding-right: 5px"><label for="nome">Nome:</label></th>
+                        <td><input type="text" name="nome" id="nome" class="form-control" placeholder="Informe o nome"></td>
+                    </tr>  
+                    <tr>
+                        <th style="text-align: right; padding-right: 5px"><label for="cpf">CPF:</label></th>
+                        <td><input type="text" name="cpf" id="cpf" class="form-control" placeholder="Informe o CPF"></td>
+                    </tr>  
+                    <tr>
+                        <th style="text-align: right; padding-right: 5px"><label for="endereco">Endereço:</label></th>
+                        <td><input type="text" name="endereco" id="endereco" class="form-control" placeholder="Informe o Endereço"></td>
+                    </tr>  
+                    <tr>
+                        <th style="text-align: right; padding-right: 5px"><label for="telefone">Telefone:</label></th>
+                        <td><input type="text" name="telefone" id="telefone" class="form-control" placeholder="Informe o Telefone"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2">
+                            <table width="30%" style="border-top-left-radius: 10px; margin: 20px 0; border: solid thin #cacaca">
+                                <tr>
+                                    <th colspan="3">Modelos</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="modelo" id="ex" value="ex"> <label for="ex">EX</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="modelo" id="elx" value="elx"> <label for="elx">ELX</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="modelo" id="master" value="master"> <label for="master">Master</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <table width="30%" style="border-top-left-radius: 10px; margin: 10px 0; border: solid thin #cacaca">
+                                <tr>
+                                    <th colspan="2">Portas</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="portas" id="portas2" value="2"> <label for="portas2">2</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="portas" id="portas4" value="4"> <label for="portas4">4</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <table width="80%" style="border-top-left-radius: 10px; margin: 10px 0; border: solid thin #cacaca">
+                                <tr>
+                                    <th colspan="3">Acessórios</th>
+                                </tr>
+                                <tr>
+                                    <td width="33%">
+                                        <input type="checkbox" name="ar" id="ar"> <label for="ar">Ar Condicionado</label>
+                                    </td>
+                                    <td width="33%">
+                                        <input type="checkbox" name="direcao" id="direcao"> <label for="direcao">Direção</label>
+                                    </td>
+                                    <td width="33%">
+                                        <input type="checkbox" name="ve_te" id="ve_te"> <label for="ve_te">VE/TE</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2" style="padding: 20px 0 30px 0">
+                            <button type="submit" class="btn btn-success" name="btn_calc">Calcular</button>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
